@@ -1,4 +1,4 @@
-# Composer 是什么
+# Composer
 
 Composer 是 PHP 的一个依赖管理工具。
 
