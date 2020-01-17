@@ -1,0 +1,14 @@
+{
+    "name": "kuriv/manual-composer",
+    "description": "Composer 手册",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kuriv Vesti",
+            "email": "kuri.personal@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

@@ -2,7 +2,7 @@
 
 执行下面的命令，在 Linux / Unix / macOS 下安装 Composer ，并且可以在系统中全局调用。
 
-```shell
+```
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 ```

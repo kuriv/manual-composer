@@ -17,11 +17,27 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
                 
             
                 
@@ -49,6 +65,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -61,6 +78,23 @@
     
     
     <link rel="prev" href="初始化.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../favicon.png'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../favicon-120x120.png">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon-180x180.png">
+        
     
 
     </head>
@@ -246,6 +280,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.1.12" data-path="发布包到 Packagist.html">
+            
+                <a href="发布包到 Packagist.html">
+            
+                    
+                    发布包到 Packagist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="配置 Packagist 包自动更新.html">
+            
+                <a href="配置 Packagist 包自动更新.html">
+            
+                    
+                    配置 Packagist 包自动更新
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -298,66 +358,20 @@
                                 
                                 <h1 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h1>
 <p>&#x8981;&#x5F00;&#x59CB;&#x5728;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528; Composer &#xFF0C;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x4E2A; <code>composer.json</code> &#x6587;&#x4EF6;&#x3002;</p>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;kuriv/composer&quot;</span>,
-    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Composer &#x624B;&#x518C;&quot;</span>,
-    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;project&quot;</span>,
-    <span class="hljs-string">&quot;keywords&quot;</span>: [
-        <span class="hljs-string">&quot;composer&quot;</span>
-    ],
-    <span class="hljs-string">&quot;homepage&quot;</span>: <span class="hljs-string">&quot;http://kuriv.github.io/manual-composer/book/&quot;</span>,
-    <span class="hljs-string">&quot;time&quot;</span>: <span class="hljs-string">&quot;2019-04-15 00:00:00&quot;</span>,
-    <span class="hljs-string">&quot;license&quot;</span>: <span class="hljs-string">&quot;MIT&quot;</span>,
-    <span class="hljs-string">&quot;authors&quot;</span>: [
-        {
-            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Kuriv Vesti&quot;</span>,
-            <span class="hljs-string">&quot;email&quot;</span>: <span class="hljs-string">&quot;kuri.personal@gmail.com&quot;</span>
-        }
-    ],
-    <span class="hljs-string">&quot;support&quot;</span>: {
-        <span class="hljs-string">&quot;email&quot;</span>: <span class="hljs-string">&quot;kuri.personal@gmail.com&quot;</span>
-    },
-    <span class="hljs-string">&quot;require&quot;</span>: {
-        <span class="hljs-string">&quot;php&quot;</span>: <span class="hljs-string">&quot;&gt;=7.3.0&quot;</span>
-    },
-    <span class="hljs-string">&quot;require-dev&quot;</span>: {},
-    <span class="hljs-string">&quot;conflict&quot;</span>: {},
-    <span class="hljs-string">&quot;replace&quot;</span>: {},
-    <span class="hljs-string">&quot;provide&quot;</span>: {},
-    <span class="hljs-string">&quot;suggest&quot;</span>: {},
-    <span class="hljs-string">&quot;autoload&quot;</span>: {
-        <span class="hljs-string">&quot;psr-4&quot;</span>: {},
-        <span class="hljs-string">&quot;psr-0&quot;</span>: {},
-        <span class="hljs-string">&quot;classmap&quot;</span>: [],
-        <span class="hljs-string">&quot;files&quot;</span>: []
-    },
-    <span class="hljs-string">&quot;autoload-dev&quot;</span>: {
-        <span class="hljs-string">&quot;psr-4&quot;</span>: {},
-        <span class="hljs-string">&quot;psr-0&quot;</span>: {},
-        <span class="hljs-string">&quot;classmap&quot;</span>: [],
-        <span class="hljs-string">&quot;files&quot;</span>: []
-    },
-    <span class="hljs-string">&quot;minimum-stability&quot;</span>: <span class="hljs-string">&quot;stable&quot;</span>,
-    <span class="hljs-string">&quot;prefer-stable&quot;</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-string">&quot;config&quot;</span>: {
-        <span class="hljs-string">&quot;process-timeout&quot;</span>: <span class="hljs-number">300</span>,
-        <span class="hljs-string">&quot;use-include-path&quot;</span>: <span class="hljs-literal">false</span>,
-        <span class="hljs-string">&quot;preferred-install&quot;</span>: <span class="hljs-string">&quot;auto&quot;</span>,
-        <span class="hljs-string">&quot;github-protocols&quot;</span>: [
-            <span class="hljs-string">&quot;git&quot;</span>,
-            <span class="hljs-string">&quot;https&quot;</span>,
-            <span class="hljs-string">&quot;ssh&quot;</span>
-        ],
-        <span class="hljs-string">&quot;vendor-dir&quot;</span>: <span class="hljs-string">&quot;vendor&quot;</span>,
-        <span class="hljs-string">&quot;bin-dir&quot;</span>: <span class="hljs-string">&quot;vendor/bin&quot;</span>,
-        <span class="hljs-string">&quot;prepend-autoloader&quot;</span>: <span class="hljs-literal">true</span>,
-        <span class="hljs-string">&quot;optimize-autoloader&quot;</span>: <span class="hljs-literal">false</span>
-    },
-    <span class="hljs-string">&quot;scripts&quot;</span>: {},
-    <span class="hljs-string">&quot;extra&quot;</span>: {},
-    <span class="hljs-string">&quot;bin&quot;</span>: [],
-    <span class="hljs-string">&quot;archive&quot;</span>: {}
-}
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;kuriv/manual-composer&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Composer &#x624B;&#x518C;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;project&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MIT&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;authors&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Kuriv Vesti&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;kuri.personal@gmail.com&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;minimum-stability&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stable&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;require&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 
                                 
@@ -402,7 +416,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"配置文件","level":"1.1.3","depth":2,"next":{"title":"版本约束","level":"1.1.4","depth":2,"path":"docs/版本约束.md","ref":"docs/版本约束.md","articles":[]},"previous":{"title":"初始化","level":"1.1.2","depth":2,"path":"docs/初始化.md","ref":"docs/初始化.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Composer","language":"zh-hans","gitbook":">=3.0.0","description":"Composer 手册","direction":"ltr"},"file":{"path":"docs/配置文件.md","mtime":"2019-11-14T07:00:30.383Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-21T10:36:10.440Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"配置文件","level":"1.1.3","depth":2,"next":{"title":"版本约束","level":"1.1.4","depth":2,"path":"docs/版本约束.md","ref":"docs/版本约束.md","articles":[]},"previous":{"title":"初始化","level":"1.1.2","depth":2,"path":"docs/初始化.md","ref":"docs/初始化.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Composer","language":"zh-hans","gitbook":">=3.0.0","description":"Composer 手册","direction":"ltr"},"file":{"path":"docs/配置文件.md","mtime":"2020-01-17T13:35:23.416Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-17T13:35:25.884Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -412,23 +426,35 @@
     <script src="../gitbook/theme.js"></script>
     
         
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
         <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
         
     
         
