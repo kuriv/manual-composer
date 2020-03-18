@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>自动加载 · Composer</title>
+        <title>全局目录 · Composer</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -74,10 +74,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="全局目录.html" />
+    <link rel="next" href="使用镜像.html" />
     
     
-    <link rel="prev" href="打印自动加载索引.html" />
+    <link rel="prev" href="自动加载.html" />
     
 
     
@@ -254,7 +254,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.10" data-path="自动加载.html">
+        <li class="chapter " data-level="1.1.10" data-path="自动加载.html">
             
                 <a href="自动加载.html">
             
@@ -267,7 +267,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.11" data-path="全局目录.html">
+        <li class="chapter active" data-level="1.1.11" data-path="全局目录.html">
             
                 <a href="全局目录.html">
             
@@ -354,7 +354,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >自动加载</a>
+        <a href=".." >全局目录</a>
     </h1>
 </div>
 
@@ -369,12 +369,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x81EA;&#x52A8;&#x52A0;&#x8F7D;">&#x81EA;&#x52A8;&#x52A0;&#x8F7D;</h1>
-<p>&#x5BF9;&#x4E8E;&#x5E93;&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#xFF0C; Composer &#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A; <code>vendor/autoload.php</code> &#x6587;&#x4EF6;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5F15;&#x5165;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x5668;&#x3002;</p>
-<pre class="language-"><code class="lang-php"><span class="token keyword">require</span> <span class="token constant">__DIR__</span> <span class="token punctuation">.</span> <span class="token single-quoted-string string">&apos;/vendor/autoload.php&apos;</span><span class="token punctuation">;</span>
+                                <h1 id="&#x5168;&#x5C40;&#x76EE;&#x5F55;">&#x5168;&#x5C40;&#x76EE;&#x5F55;</h1>
+<p>&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x67E5;&#x770B; Composer &#x7684;&#x5168;&#x5C40;&#x76EE;&#x5F55;&#x3002;</p>
+<pre class="language-"><code>composer global config bin-dir --absolute
 </code></pre>
-<p>Composer &#x63D0;&#x4F9B;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x60F3;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x53EF;&#x4EE5;&#x4EC5;&#x4EC5;&#x5F15;&#x5165; <code>vendor/composer/autoload_*.php</code> &#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5173;&#x8054;&#x6570;&#x7EC4;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5173;&#x8054;&#x6570;&#x7EC4;&#x914D;&#x7F6E;&#x81EA;&#x5DF1;&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x5668;&#x3002;</p>
-
                                 
                                 </section>
                             
@@ -401,12 +399,12 @@
 
             
                 
-                <a href="打印自动加载索引.html" class="navigation navigation-prev " aria-label="Previous page: 打印自动加载索引">
+                <a href="自动加载.html" class="navigation navigation-prev " aria-label="Previous page: 自动加载">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="全局目录.html" class="navigation navigation-next " aria-label="Next page: 全局目录">
+                <a href="使用镜像.html" class="navigation navigation-next " aria-label="Next page: 使用镜像">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -417,7 +415,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"自动加载","level":"1.1.10","depth":2,"next":{"title":"全局目录","level":"1.1.11","depth":2,"path":"docs/全局目录.md","ref":"docs/全局目录.md","articles":[]},"previous":{"title":"打印自动加载索引","level":"1.1.9","depth":2,"path":"docs/打印自动加载索引.md","ref":"docs/打印自动加载索引.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Composer","language":"zh-hans","gitbook":">=3.0.0","description":"Composer 手册","direction":"ltr"},"file":{"path":"docs/自动加载.md","mtime":"2019-04-22T12:54:18.877Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-18T13:11:53.518Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"全局目录","level":"1.1.11","depth":2,"next":{"title":"使用镜像","level":"1.1.12","depth":2,"path":"docs/使用镜像.md","ref":"docs/使用镜像.md","articles":[]},"previous":{"title":"自动加载","level":"1.1.10","depth":2,"path":"docs/自动加载.md","ref":"docs/自动加载.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","favicon","hide-element","lightbox","-highlight","prism","-lunr","-search","search-pro","splitter","livereload"],"root":"","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico","appleTouch":"favicon.png","appleTouchMore":{"120x120":"favicon-120x120.png","180x180":"favicon-180x180.png"}},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kuriv Vesti","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"","variables":{},"title":"Composer","language":"zh-hans","gitbook":">=3.0.0","description":"Composer 手册","direction":"ltr"},"file":{"path":"docs/全局目录.md","mtime":"2020-03-18T13:11:46.792Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-18T13:11:53.518Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

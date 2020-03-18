@@ -11,6 +11,7 @@
     * [更新依赖](docs/更新依赖.md)
     * [打印自动加载索引](docs/打印自动加载索引.md)
     * [自动加载](docs/自动加载.md)
+    * [全局目录](docs/全局目录.md)
     * [使用镜像](docs/使用镜像.md)
     * [发布包到 Packagist](docs/发布包到 Packagist.md)
     * [配置 Packagist 包自动更新](docs/配置 Packagist 包自动更新.md)
