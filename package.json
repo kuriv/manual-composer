@@ -1,13 +1,14 @@
 {
   "name": "manual-composer",
-  "version": "1.0.7",
-  "description": "Composer 手册",
+  "version": "1.0.8",
+  "description": "Composer 是 PHP 的一个依赖管理工具。",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gitbook serve ./ ./book"
   },
   "repository": {
     "type": "git",
